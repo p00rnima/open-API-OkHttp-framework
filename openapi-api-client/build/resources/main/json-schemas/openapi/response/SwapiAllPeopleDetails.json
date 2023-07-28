@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Root Schema",
+  "type": "object",
+  "properties": {
+    "count": {
+      "title": "The count Schema",
+      "type": "integer",
+      "examples": [
+        82
+      ]
+    },
+    "next": {
+      "title": "The next Schema",
+      "type": "string",
+      "examples": [
+        "https://swapi.dev/api/people/?page=2"
+      ]
+    },
+    "previous": {
+      "title": "The previous Schema",
+      "type": "null",
+      "examples": [
+        null
+      ]
+    },
+    "results": {
+      "title": "The results Schema",
+      "type": "array",
+      "items": {
+        "title": "A Schema",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "The name Schema",
+            "type": "string",
+            "examples": [
+              "Luke Skywalker"
+            ]
+          },
+          "height": {
+            "title": "The height Schema",
+            "type": "string",
+            "examples": [
+              "172"
+            ]
+          },
+          "mass": {
+            "title": "The mass Schema",
+            "type": "string",
+            "examples": [
+              "77"
+            ]
+          },
+          "hair_color": {
+            "title": "The hair_color Schema",
+            "type": "string",
+            "examples": [
+              "blond"
+            ]
+          },
+          "skin_color": {
+            "title": "The skin_color Schema",
+            "type": "string",
+            "examples": [
+              "fair"
+            ]
+          },
+          "eye_color": {
+            "title": "The eye_color Schema",
+            "type": "string",
+            "examples": [
+              "blue"
+            ]
+          },
+          "birth_year": {
+            "title": "The birth_year Schema",
+            "type": "string",
+            "examples": [
+              "19BBY"
+            ]
+          },
+          "gender": {
+            "title": "The gender Schema",
+            "type": "string",
+            "examples": [
+              "male"
+            ]
+          },
+          "homeworld": {
+            "title": "The homeworld Schema",
+            "type": "string",
+            "examples": [
+              "https://swapi.dev/api/planets/1/"
+            ]
+          },
+          "films": {
+            "title": "The films Schema",
+            "type": "array",
+            "items": {
+              "title": "A Schema",
+              "type": "string",
+              "examples": [
+                "https://swapi.dev/api/films/1/",
+                "https://swapi.dev/api/films/2/",
+                "https://swapi.dev/api/films/3/",
+                "https://swapi.dev/api/films/6/"
+              ]
+            },
+            "examples": [
+              ["https://swapi.dev/api/films/1/",
+                "https://swapi.dev/api/films/2/",
+                "https://swapi.dev/api/films/3/",
+                "https://swapi.dev/api/films/6/"
+              ]
+            ]
+          },
+          "species": {
+            "title": "The species Schema",
+            "type": "array",
+            "items": {},
+            "examples": [
+              []
+            ]
+          },
+          "vehicles": {
+            "title": "The vehicles Schema",
+            "type": "array",
+            "items": {
+              "title": "A Schema",
+              "type": "string",
+              "examples": [
+                "https://swapi.dev/api/vehicles/14/",
+                "https://swapi.dev/api/vehicles/30/"
+              ]
+            },
+            "examples": [
+              ["https://swapi.dev/api/vehicles/14/",
+                "https://swapi.dev/api/vehicles/30/"
+              ]
+            ]
+          },
+          "starships": {
+            "title": "The starships Schema",
+            "type": "array",
+            "items": {
+              "title": "A Schema",
+              "type": "string",
+              "examples": [
+                "https://swapi.dev/api/starships/12/",
+                "https://swapi.dev/api/starships/22/"
+              ]
+            },
+            "examples": [
+              ["https://swapi.dev/api/starships/12/",
+                "https://swapi.dev/api/starships/22/"
+              ]
+            ]
+          },
+          "created": {
+            "title": "The created Schema",
+            "type": "string",
+            "examples": [
+              "2014-12-09T13:50:51.644000Z"
+            ]
+          },
+          "edited": {
+            "title": "The edited Schema",
+            "type": "string",
+            "examples": [
+              "2014-12-20T21:17:56.891000Z"
+            ]
+          },
+          "url": {
+            "title": "The url Schema",
+            "type": "string",
+            "examples": [
+              "https://swapi.dev/api/people/1/"
+            ]
+          }
+        },
+        "examples": [{
+          "name": "Luke Skywalker",
+          "height": "172",
+          "mass": "77",
+          "hair_color": "blond",
+          "skin_color": "fair",
+          "eye_color": "blue",
+          "birth_year": "19BBY",
+          "gender": "male",
+          "homeworld": "https://swapi.dev/api/planets/1/",
+          "films": [
+            "https://swapi.dev/api/films/1/",
+            "https://swapi.dev/api/films/2/",
+            "https://swapi.dev/api/films/3/",
+            "https://swapi.dev/api/films/6/"
+          ],
+          "species": [],
+          "vehicles": [
+            "https://swapi.dev/api/vehicles/14/",
+            "https://swapi.dev/api/vehicles/30/"
+          ],
+          "starships": [
+            "https://swapi.dev/api/starships/12/",
+            "https://swapi.dev/api/starships/22/"
+          ],
+          "created": "2014-12-09T13:50:51.644000Z",
+          "edited": "2014-12-20T21:17:56.891000Z",
+          "url": "https://swapi.dev/api/people/1/"
+        }]
+      },
+      "examples": [
+        [{
+          "name": "Luke Skywalker",
+          "height": "172",
+          "mass": "77",
+          "hair_color": "blond",
+          "skin_color": "fair",
+          "eye_color": "blue",
+          "birth_year": "19BBY",
+          "gender": "male",
+          "homeworld": "https://swapi.dev/api/planets/1/",
+          "films": [
+            "https://swapi.dev/api/films/1/",
+            "https://swapi.dev/api/films/2/",
+            "https://swapi.dev/api/films/3/",
+            "https://swapi.dev/api/films/6/"
+          ],
+          "species": [],
+          "vehicles": [
+            "https://swapi.dev/api/vehicles/14/",
+            "https://swapi.dev/api/vehicles/30/"
+          ],
+          "starships": [
+            "https://swapi.dev/api/starships/12/",
+            "https://swapi.dev/api/starships/22/"
+          ],
+          "created": "2014-12-09T13:50:51.644000Z",
+          "edited": "2014-12-20T21:17:56.891000Z",
+          "url": "https://swapi.dev/api/people/1/"
+        }]
+      ]
+    }
+  },
+  "examples": [{
+    "count": 82,
+    "next": "https://swapi.dev/api/people/?page=2",
+    "previous": null,
+    "results": [{
+      "name": "Luke Skywalker",
+      "height": "172",
+      "mass": "77",
+      "hair_color": "blond",
+      "skin_color": "fair",
+      "eye_color": "blue",
+      "birth_year": "19BBY",
+      "gender": "male",
+      "homeworld": "https://swapi.dev/api/planets/1/",
+      "films": [
+        "https://swapi.dev/api/films/1/",
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/",
+        "https://swapi.dev/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [
+        "https://swapi.dev/api/vehicles/14/",
+        "https://swapi.dev/api/vehicles/30/"
+      ],
+      "starships": [
+        "https://swapi.dev/api/starships/12/",
+        "https://swapi.dev/api/starships/22/"
+      ],
+      "created": "2014-12-09T13:50:51.644000Z",
+      "edited": "2014-12-20T21:17:56.891000Z",
+      "url": "https://swapi.dev/api/people/1/"
+    }]
+  }]
+}

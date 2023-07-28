@@ -1,0 +1,28 @@
+plugins {
+    id "io.spring.dependency-management"
+}
+
+dependencies {
+    compile group: 'org.slf4j', name: 'slf4j-api'
+    compile group: 'ch.qos.logback', name: 'logback-classic'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind'
+    compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml'
+    compile group: 'org.assertj', name: 'assertj-core'
+    compile group: 'org.jdbi', name: 'jdbi3-postgres'
+    compile group: 'net.sf.supercsv', name: 'super-csv-java8'
+    compile group: 'org.apache.commons', name: 'commons-math3'
+    compile group: 'org.apache.commons', name: 'commons-lang3'
+    compile group: 'com.healthmarketscience.sqlbuilder', name: 'sqlbuilder'
+    compile group: 'org.unitils', name: 'unitils-core'
+    compile group: 'org.postgresql', name: 'postgresql', version: "42.2.16"
+    
+    compileOnly group: 'org.projectlombok', name: 'lombok'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok'
+}
+
+// Disable unused tasks
+processResources { enabled = false }
+compileTestJava { enabled = false }
+processTestResources { enabled = false }
+testClasses { enabled = false }
+test { enabled = false }
