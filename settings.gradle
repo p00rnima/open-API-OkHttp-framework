@@ -1,0 +1,4 @@
+rootProject.name = 'open-api'
+include 'openapi-test-commons'
+include 'openapi-api-client'
+include 'openapi-api-test'

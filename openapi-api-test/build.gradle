@@ -1,0 +1,63 @@
+dependencies {
+    testCompile project(':openapi-test-commons')
+    testCompile project(':openapi-api-client')
+    testCompile group: 'io.cucumber', name: 'cucumber-core'
+    testCompile group: 'io.cucumber', name: 'cucumber-java'
+    testCompile group: 'io.cucumber', name: 'cucumber-testng'
+    testCompile group: 'io.github.testra', name: 'testra-java-cucumber2-reporter'
+    testCompile group: 'org.testng', name: 'testng'
+    testCompile group: 'org.jdbi', name: 'jdbi3-postgres'
+    testCompile group: 'net.sf.supercsv', name: 'super-csv-java8'
+    testCompile group: 'org.fluentlenium', name: 'fluentlenium-cucumber'
+    testCompile group: 'org.modelmapper', name: 'modelmapper'
+
+    testCompileOnly group: 'org.projectlombok', name: 'lombok'
+    testAnnotationProcessor group: 'org.projectlombok', name: 'lombok'
+}
+
+tasks.withType(Test) {
+    systemProperty 'user.timezone', 'GMT'
+}
+
+task testTokenSetUp(type: Test) {
+    def env = System.getProperty("env")
+    def testSuitesPath = "src/test/resources/testng/$env/testng-api.xml"
+    useTestNG() {
+        suites testSuitesPath
+    }
+    testLogging.showStandardStreams = true
+    jvmArgs '-da'
+    System.setProperty( "basePath", rootProject.projectDir.toString() )
+    systemProperties System.getProperties()
+    ignoreFailures = true
+}
+
+task testAPI(type: Test) {
+    def env = System.getProperty("env")
+    def testSuitesPath = "src/test/resources/testng/$env/testng-api.xml"
+    useTestNG() {
+        suites testSuitesPath
+    }
+    testLogging.showStandardStreams = true
+    jvmArgs '-da'
+    System.setProperty( "basePath", rootProject.projectDir.toString() )
+    systemProperties System.getProperties()
+    ignoreFailures = true
+}
+// Disable unused tasks
+compileJava { enabled = false }
+processResources { enabled = false }
+
+task testJar(type: Jar) {
+    dependsOn testClasses
+    sourceSets.test.output.each {
+        from it
+    }
+    configurations.testRuntime.each { File f ->
+        if (f.name.endsWith('.jar')) {
+            from zipTree(f)
+        } else {
+            from f
+        }
+    }
+}

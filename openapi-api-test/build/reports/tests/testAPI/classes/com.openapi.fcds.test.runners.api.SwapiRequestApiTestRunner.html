@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.openapi.fcds.test.runners.api.SwapiRequestApiTestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.openapi.fcds.test.runners.api.SwapiRequestApiTestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.openapi.fcds.test.runners.api.html">com.openapi.fcds.test.runners.api</a> &gt; SwapiRequestApiTestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.879s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">runScenario[0](&quot;Get given people details and verify the response&quot;, &quot;Find the people details from swapi&quot;)</td>
+<td class="success">0.484s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">runScenario[1](&quot;Get given people details and verify the response&quot;, &quot;Find the people details from swapi&quot;)</td>
+<td class="success">0.097s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">runScenario[2](&quot;Get all people details and verify given people data in the response&quot;, &quot;Find the people details from swapi&quot;)</td>
+<td class="success">0.170s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">runScenario[3](&quot;Get all people details and verify given people data in the response&quot;, &quot;Find the people details from swapi&quot;)</td>
+<td class="success">0.128s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>@swapi @people
+Feature: Find the people details from swapi
+  As an API user
+  I want to get people details from swapi
+  So that I use their starships and vehicle details
+
+  Scenario Outline: Get given people details and verify the response # src/test/resources/feature_files/openapi/api/swapi/SwapiPeople.feature:7
+    When a user gets single person details from swapi with id &lt;PEOPLE_ID&gt;
+    Then user verifies the people details
+
+    Examples: 
+
+  @swapi @people
+  Scenario Outline: Get given people details and verify the response # src/test/resources/feature_files/openapi/api/swapi/SwapiPeople.feature:14
+23:35:04,305 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+23:35:04,305 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+23:35:04,305 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/sakthimurugansubramanian/code/open-api/openapi-api-test/build/resources/test/logback.xml]
+23:35:04,306 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+23:35:04,306 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/Users/sakthimurugansubramanian/code/open-api/openapi-api-test/build/resources/test/logback.xml]
+23:35:04,306 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/sakthimurugansubramanian/code/open-api/openapi-api-client/build/libs/openapi-api-client-1.0-SNAPSHOT.jar!/logback.xml]
+23:35:04,320 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+23:35:04,320 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+23:35:04,323 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+23:35:04,324 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+23:35:04,331 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+23:35:04,331 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+23:35:04,331 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+23:35:04,332 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@781a339 - Registering current configuration as safe fallback point
+
+23:35:04.334 |-INFO        c.o.f.t.u.PropertyHelper| Loading property resource : swapi.environment.properties
+23:35:04.335 |-INFO        c.o.f.t.u.PropertyHelper| Loading property resource : endpoint.properties
+23:35:04.336 |-INFO        c.o.f.t.u.PropertyHelper| Loading property resource : default.properties
+23:35:04.336 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.336 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario setup - Begin
+23:35:04.336 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:04.336 |-INFO  c.o.f.t.s.c.CommonDataProvider| Attempting to create new common data object for id : 16
+23:35:04.336 |-INFO  c.o.f.t.s.c.CommonDataProvider| Created common data object for id: 16
+23:35:04.336 |-INFO         c.o.f.t.s.c.CommonSteps| Initialised common data instance for scenario
+23:35:04.336 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.336 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario setup - End
+23:35:04.336 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:04.465 |-INFO   c.o.f.t.c.h.GenericHttpClient| Initialised Ok-http client for SwapiRequestRestClient with connection pool size : 10
+23:35:04.491 |-INFO   c.o.f.t.c.h.GenericHttpClient| &gt;&gt;==&gt; HTTP GET https://swapi.dev/api/people/1
+
+23:35:04.495 |-INFO   c.o.f.t.c.h.GenericHttpClient| Accept: application/json
+23:35:04.498 |-INFO   c.o.f.t.c.h.GenericHttpClient| payload: (no body)
+
+23:35:04.498 |-INFO   c.o.f.t.c.h.GenericHttpClient| &gt;&gt;==&gt; END HTTP (0-byte body)
+
+23:35:04.732 |-INFO   c.o.f.t.c.h.GenericHttpClient| &lt;==&lt;&lt; HTTP 200 https://swapi.dev/api/people/1 (240.2ms)
+
+23:35:04.733 |-INFO   c.o.f.t.c.h.GenericHttpClient| Server: nginx/1.16.1
+23:35:04.733 |-INFO   c.o.f.t.c.h.GenericHttpClient| Date: Mon, 20 Mar 2023 23:35:04 GMT
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| Content-Type: application/json
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| Transfer-Encoding: chunked
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| Connection: keep-alive
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| Vary: Accept, Cookie
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| X-Frame-Options: SAMEORIGIN
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| ETag: &quot;ee398610435c328f4d0a4e1b0d2f7bbc&quot;
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| Allow: GET, HEAD, OPTIONS
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| Strict-Transport-Security: max-age=15768000
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| OkHttp-Sent-Millis: 1679355304684
+23:35:04.734 |-INFO   c.o.f.t.c.h.GenericHttpClient| OkHttp-Received-Millis: 1679355304729
+23:35:04.735 |-INFO   c.o.f.t.c.h.GenericHttpClient| payload: {&quot;name&quot;:&quot;Luke Skywalker&quot;,&quot;height&quot;:&quot;172&quot;,&quot;mass&quot;:&quot;77&quot;,&quot;hair_color&quot;:&quot;blond&quot;,&quot;skin_color&quot;:&quot;fair&quot;,&quot;eye_color&quot;:&quot;blue&quot;,&quot;birth_year&quot;:&quot;19BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[&quot;https://swapi.dev/api/vehicles/14/&quot;,&quot;https://swapi.dev/api/vehicles/30/&quot;],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/12/&quot;,&quot;https://swapi.dev/api/starships/22/&quot;],&quot;created&quot;:&quot;2014-12-09T13:50:51.644000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:56.891000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/1/&quot;}
+
+23:35:04.735 |-INFO   c.o.f.t.c.h.GenericHttpClient| &lt;==&lt;&lt; END HTTP (-1-byte body)
+
+    When a user gets single person details from swapi with id 1      # SwapiRequestSteps.aUserGetsSinglePersonDetailsFromSwapi(String)
+    Then user verifies the people details                            # SwapiRequestSteps.userVerifiesThePeopleDetails(DataTable)
+23:35:04.762 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.763 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario teardown - Begin
+23:35:04.763 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:04.763 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.763 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario teardown - End
+23:35:04.763 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+
+  @swapi @people
+  Scenario Outline: Get given people details and verify the response # src/test/resources/feature_files/openapi/api/swapi/SwapiPeople.feature:15
+23:35:04.764 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.764 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario setup - Begin
+23:35:04.764 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:04.764 |-INFO  c.o.f.t.s.c.CommonDataProvider| Attempting to create new common data object for id : 16
+23:35:04.764 |-INFO  c.o.f.t.s.c.CommonDataProvider| Created common data object for id: 16
+23:35:04.764 |-INFO         c.o.f.t.s.c.CommonSteps| Initialised common data instance for scenario
+23:35:04.764 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.764 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario setup - End
+23:35:04.764 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:04.764 |-INFO   c.o.f.t.c.h.GenericHttpClient| &gt;&gt;==&gt; HTTP GET https://swapi.dev/api/people/4
+
+23:35:04.764 |-INFO   c.o.f.t.c.h.GenericHttpClient| Accept: application/json
+23:35:04.765 |-INFO   c.o.f.t.c.h.GenericHttpClient| payload: (no body)
+
+23:35:04.765 |-INFO   c.o.f.t.c.h.GenericHttpClient| &gt;&gt;==&gt; END HTTP (0-byte body)
+
+23:35:04.855 |-INFO   c.o.f.t.c.h.GenericHttpClient| &lt;==&lt;&lt; HTTP 200 https://swapi.dev/api/people/4 (91.0ms)
+
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| Server: nginx/1.16.1
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| Date: Mon, 20 Mar 2023 23:35:04 GMT
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| Content-Type: application/json
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| Transfer-Encoding: chunked
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| Connection: keep-alive
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| Vary: Accept, Cookie
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| X-Frame-Options: SAMEORIGIN
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| ETag: &quot;3bd6683da4bf9ac731386ed3fa8ce8fc&quot;
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| Allow: GET, HEAD, OPTIONS
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| Strict-Transport-Security: max-age=15768000
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| OkHttp-Sent-Millis: 1679355304765
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| OkHttp-Received-Millis: 1679355304855
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| payload: {&quot;name&quot;:&quot;Darth Vader&quot;,&quot;height&quot;:&quot;202&quot;,&quot;mass&quot;:&quot;136&quot;,&quot;hair_color&quot;:&quot;none&quot;,&quot;skin_color&quot;:&quot;white&quot;,&quot;eye_color&quot;:&quot;yellow&quot;,&quot;birth_year&quot;:&quot;41.9BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/13/&quot;],&quot;created&quot;:&quot;2014-12-10T15:18:20.704000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.313000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/4/&quot;}
+
+23:35:04.856 |-INFO   c.o.f.t.c.h.GenericHttpClient| &lt;==&lt;&lt; END HTTP (-1-byte body)
+
+    When a user gets single person details from swapi with id 4      # SwapiRequestSteps.aUserGetsSinglePersonDetailsFromSwapi(String)
+    Then user verifies the people details                            # SwapiRequestSteps.userVerifiesThePeopleDetails(DataTable)
+23:35:04.859 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.859 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario teardown - Begin
+23:35:04.859 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:04.859 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.859 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario teardown - End
+23:35:04.859 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+
+  Scenario Outline: Get all people details and verify given people data in the response # src/test/resources/feature_files/openapi/api/swapi/SwapiPeople.feature:17
+    When a user gets all the people details list
+    Then user verifies the given person details
+
+    Examples: 
+
+  @swapi @people
+  Scenario Outline: Get all people details and verify given people data in the response # src/test/resources/feature_files/openapi/api/swapi/SwapiPeople.feature:24
+23:35:04.861 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.861 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario setup - Begin
+23:35:04.861 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:04.861 |-INFO  c.o.f.t.s.c.CommonDataProvider| Attempting to create new common data object for id : 16
+23:35:04.861 |-INFO  c.o.f.t.s.c.CommonDataProvider| Created common data object for id: 16
+23:35:04.861 |-INFO         c.o.f.t.s.c.CommonSteps| Initialised common data instance for scenario
+23:35:04.861 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:04.861 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario setup - End
+23:35:04.861 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:04.862 |-INFO   c.o.f.t.c.h.GenericHttpClient| &gt;&gt;==&gt; HTTP GET https://swapi.dev/api/people
+
+23:35:04.862 |-INFO   c.o.f.t.c.h.GenericHttpClient| Accept: application/json
+23:35:04.862 |-INFO   c.o.f.t.c.h.GenericHttpClient| payload: (no body)
+
+23:35:04.862 |-INFO   c.o.f.t.c.h.GenericHttpClient| &gt;&gt;==&gt; END HTTP (0-byte body)
+
+23:35:05.019 |-INFO   c.o.f.t.c.h.GenericHttpClient| &lt;==&lt;&lt; HTTP 200 https://swapi.dev/api/people (156.5ms)
+
+23:35:05.019 |-INFO   c.o.f.t.c.h.GenericHttpClient| Server: nginx/1.16.1
+23:35:05.019 |-INFO   c.o.f.t.c.h.GenericHttpClient| Date: Mon, 20 Mar 2023 23:35:05 GMT
+23:35:05.019 |-INFO   c.o.f.t.c.h.GenericHttpClient| Content-Type: application/json
+23:35:05.019 |-INFO   c.o.f.t.c.h.GenericHttpClient| Transfer-Encoding: chunked
+23:35:05.019 |-INFO   c.o.f.t.c.h.GenericHttpClient| Connection: keep-alive
+23:35:05.019 |-INFO   c.o.f.t.c.h.GenericHttpClient| Vary: Accept, Cookie
+23:35:05.020 |-INFO   c.o.f.t.c.h.GenericHttpClient| X-Frame-Options: SAMEORIGIN
+23:35:05.020 |-INFO   c.o.f.t.c.h.GenericHttpClient| ETag: &quot;b493126da505af6fec015ec116fec193&quot;
+23:35:05.020 |-INFO   c.o.f.t.c.h.GenericHttpClient| Allow: GET, HEAD, OPTIONS
+23:35:05.020 |-INFO   c.o.f.t.c.h.GenericHttpClient| Strict-Transport-Security: max-age=15768000
+23:35:05.020 |-INFO   c.o.f.t.c.h.GenericHttpClient| OkHttp-Sent-Millis: 1679355304863
+23:35:05.020 |-INFO   c.o.f.t.c.h.GenericHttpClient| OkHttp-Received-Millis: 1679355305019
+23:35:05.020 |-INFO   c.o.f.t.c.h.GenericHttpClient| payload: {&quot;count&quot;:82,&quot;next&quot;:&quot;https://swapi.dev/api/people/?page=2&quot;,&quot;previous&quot;:null,&quot;results&quot;:[{&quot;name&quot;:&quot;Luke Skywalker&quot;,&quot;height&quot;:&quot;172&quot;,&quot;mass&quot;:&quot;77&quot;,&quot;hair_color&quot;:&quot;blond&quot;,&quot;skin_color&quot;:&quot;fair&quot;,&quot;eye_color&quot;:&quot;blue&quot;,&quot;birth_year&quot;:&quot;19BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[&quot;https://swapi.dev/api/vehicles/14/&quot;,&quot;https://swapi.dev/api/vehicles/30/&quot;],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/12/&quot;,&quot;https://swapi.dev/api/starships/22/&quot;],&quot;created&quot;:&quot;2014-12-09T13:50:51.644000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:56.891000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/1/&quot;},{&quot;name&quot;:&quot;C-3PO&quot;,&quot;height&quot;:&quot;167&quot;,&quot;mass&quot;:&quot;75&quot;,&quot;hair_color&quot;:&quot;n/a&quot;,&quot;skin_color&quot;:&quot;gold&quot;,&quot;eye_color&quot;:&quot;yellow&quot;,&quot;birth_year&quot;:&quot;112BBY&quot;,&quot;gender&quot;:&quot;n/a&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/4/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[&quot;https://swapi.dev/api/species/2/&quot;],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:10:51.357000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.309000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/2/&quot;},{&quot;name&quot;:&quot;R2-D2&quot;,&quot;height&quot;:&quot;96&quot;,&quot;mass&quot;:&quot;32&quot;,&quot;hair_color&quot;:&quot;n/a&quot;,&quot;skin_color&quot;:&quot;white, blue&quot;,&quot;eye_color&quot;:&quot;red&quot;,&quot;birth_year&quot;:&quot;33BBY&quot;,&quot;gender&quot;:&quot;n/a&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/8/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/4/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[&quot;https://swapi.dev/api/species/2/&quot;],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:11:50.376000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.311000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/3/&quot;},{&quot;name&quot;:&quot;Darth Vader&quot;,&quot;height&quot;:&quot;202&quot;,&quot;mass&quot;:&quot;136&quot;,&quot;hair_color&quot;:&quot;none&quot;,&quot;skin_color&quot;:&quot;white&quot;,&quot;eye_color&quot;:&quot;yellow&quot;,&quot;birth_year&quot;:&quot;41.9BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/13/&quot;],&quot;created&quot;:&quot;2014-12-10T15:18:20.704000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.313000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/4/&quot;},{&quot;name&quot;:&quot;Leia Organa&quot;,&quot;height&quot;:&quot;150&quot;,&quot;mass&quot;:&quot;49&quot;,&quot;hair_color&quot;:&quot;brown&quot;,&quot;skin_color&quot;:&quot;light&quot;,&quot;eye_color&quot;:&quot;brown&quot;,&quot;birth_year&quot;:&quot;19BBY&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/2/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[&quot;https://swapi.dev/api/vehicles/30/&quot;],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:20:09.791000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.315000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/5/&quot;},{&quot;name&quot;:&quot;Owen Lars&quot;,&quot;height&quot;:&quot;178&quot;,&quot;mass&quot;:&quot;120&quot;,&quot;hair_color&quot;:&quot;brown, grey&quot;,&quot;skin_color&quot;:&quot;light&quot;,&quot;eye_color&quot;:&quot;blue&quot;,&quot;birth_year&quot;:&quot;52BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:52:14.024000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.317000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/6/&quot;},{&quot;name&quot;:&quot;Beru Whitesun lars&quot;,&quot;height&quot;:&quot;165&quot;,&quot;mass&quot;:&quot;75&quot;,&quot;hair_color&quot;:&quot;brown&quot;,&quot;skin_color&quot;:&quot;light&quot;,&quot;eye_color&quot;:&quot;blue&quot;,&quot;birth_year&quot;:&quot;47BBY&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:53:41.121000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.319000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/7/&quot;},{&quot;name&quot;:&quot;R5-D4&quot;,&quot;height&quot;:&quot;97&quot;,&quot;mass&quot;:&quot;32&quot;,&quot;hair_color&quot;:&quot;n/a&quot;,&quot;skin_color&quot;:&quot;white, red&quot;,&quot;eye_color&quot;:&quot;red&quot;,&quot;birth_year&quot;:&quot;unknown&quot;,&quot;gender&quot;:&quot;n/a&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;],&quot;species&quot;:[&quot;https://swapi.dev/api/species/2/&quot;],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:57:50.959000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.321000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/8/&quot;},{&quot;name&quot;:&quot;Biggs Darklighter&quot;,&quot;height&quot;:&quot;183&quot;,&quot;mass&quot;:&quot;84&quot;,&quot;hair_color&quot;:&quot;black&quot;,&quot;skin_color&quot;:&quot;light&quot;,&quot;eye_color&quot;:&quot;brown&quot;,&quot;birth_year&quot;:&quot;24BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/12/&quot;],&quot;created&quot;:&quot;2014-12-10T15:59:50.509000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.323000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/9/&quot;},{&quot;name&quot;:&quot;Obi-Wan Kenobi&quot;,&quot;height&quot;:&quot;182&quot;,&quot;mass&quot;:&quot;77&quot;,&quot;hair_color&quot;:&quot;auburn, white&quot;,&quot;skin_color&quot;:&quot;fair&quot;,&quot;eye_color&quot;:&quot;blue-gray&quot;,&quot;birth_year&quot;:&quot;57BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/20/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/4/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[&quot;https://swapi.dev/api/vehicles/38/&quot;],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/48/&quot;,&quot;https://swapi.dev/api/starships/59/&quot;,&quot;https://swapi.dev/api/starships/64/&quot;,&quot;https://swapi.dev/api/starships/65/&quot;,&quot;https://swapi.dev/api/starships/74/&quot;],&quot;created&quot;:&quot;2014-12-10T16:16:29.192000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.325000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/10/&quot;}]}
+
+23:35:05.021 |-INFO   c.o.f.t.c.h.GenericHttpClient| &lt;==&lt;&lt; END HTTP (-1-byte body)
+
+    When a user gets all the people details list                                        # SwapiRequestSteps.aUserGetsAllThePeopleDetailsList()
+    Then user verifies the given person details                                         # SwapiRequestSteps.userVerifiesTheGivenPersonDetails(DataTable)
+23:35:05.030 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:05.030 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario teardown - Begin
+23:35:05.030 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:05.030 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:05.030 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario teardown - End
+23:35:05.030 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+
+  @swapi @people
+  Scenario Outline: Get all people details and verify given people data in the response # src/test/resources/feature_files/openapi/api/swapi/SwapiPeople.feature:25
+23:35:05.031 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:05.031 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario setup - Begin
+23:35:05.031 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:05.031 |-INFO  c.o.f.t.s.c.CommonDataProvider| Attempting to create new common data object for id : 16
+23:35:05.031 |-INFO  c.o.f.t.s.c.CommonDataProvider| Created common data object for id: 16
+23:35:05.031 |-INFO         c.o.f.t.s.c.CommonSteps| Initialised common data instance for scenario
+23:35:05.031 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:05.031 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario setup - End
+23:35:05.031 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:05.032 |-INFO   c.o.f.t.c.h.GenericHttpClient| &gt;&gt;==&gt; HTTP GET https://swapi.dev/api/people
+
+23:35:05.032 |-INFO   c.o.f.t.c.h.GenericHttpClient| Accept: application/json
+23:35:05.032 |-INFO   c.o.f.t.c.h.GenericHttpClient| payload: (no body)
+
+23:35:05.032 |-INFO   c.o.f.t.c.h.GenericHttpClient| &gt;&gt;==&gt; END HTTP (0-byte body)
+
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| &lt;==&lt;&lt; HTTP 200 https://swapi.dev/api/people (119.0ms)
+
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| Server: nginx/1.16.1
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| Date: Mon, 20 Mar 2023 23:35:05 GMT
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| Content-Type: application/json
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| Transfer-Encoding: chunked
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| Connection: keep-alive
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| Vary: Accept, Cookie
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| X-Frame-Options: SAMEORIGIN
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| ETag: &quot;b493126da505af6fec015ec116fec193&quot;
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| Allow: GET, HEAD, OPTIONS
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| Strict-Transport-Security: max-age=15768000
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| OkHttp-Sent-Millis: 1679355305032
+23:35:05.151 |-INFO   c.o.f.t.c.h.GenericHttpClient| OkHttp-Received-Millis: 1679355305151
+23:35:05.152 |-INFO   c.o.f.t.c.h.GenericHttpClient| payload: {&quot;count&quot;:82,&quot;next&quot;:&quot;https://swapi.dev/api/people/?page=2&quot;,&quot;previous&quot;:null,&quot;results&quot;:[{&quot;name&quot;:&quot;Luke Skywalker&quot;,&quot;height&quot;:&quot;172&quot;,&quot;mass&quot;:&quot;77&quot;,&quot;hair_color&quot;:&quot;blond&quot;,&quot;skin_color&quot;:&quot;fair&quot;,&quot;eye_color&quot;:&quot;blue&quot;,&quot;birth_year&quot;:&quot;19BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[&quot;https://swapi.dev/api/vehicles/14/&quot;,&quot;https://swapi.dev/api/vehicles/30/&quot;],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/12/&quot;,&quot;https://swapi.dev/api/starships/22/&quot;],&quot;created&quot;:&quot;2014-12-09T13:50:51.644000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:56.891000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/1/&quot;},{&quot;name&quot;:&quot;C-3PO&quot;,&quot;height&quot;:&quot;167&quot;,&quot;mass&quot;:&quot;75&quot;,&quot;hair_color&quot;:&quot;n/a&quot;,&quot;skin_color&quot;:&quot;gold&quot;,&quot;eye_color&quot;:&quot;yellow&quot;,&quot;birth_year&quot;:&quot;112BBY&quot;,&quot;gender&quot;:&quot;n/a&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/4/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[&quot;https://swapi.dev/api/species/2/&quot;],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:10:51.357000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.309000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/2/&quot;},{&quot;name&quot;:&quot;R2-D2&quot;,&quot;height&quot;:&quot;96&quot;,&quot;mass&quot;:&quot;32&quot;,&quot;hair_color&quot;:&quot;n/a&quot;,&quot;skin_color&quot;:&quot;white, blue&quot;,&quot;eye_color&quot;:&quot;red&quot;,&quot;birth_year&quot;:&quot;33BBY&quot;,&quot;gender&quot;:&quot;n/a&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/8/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/4/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[&quot;https://swapi.dev/api/species/2/&quot;],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:11:50.376000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.311000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/3/&quot;},{&quot;name&quot;:&quot;Darth Vader&quot;,&quot;height&quot;:&quot;202&quot;,&quot;mass&quot;:&quot;136&quot;,&quot;hair_color&quot;:&quot;none&quot;,&quot;skin_color&quot;:&quot;white&quot;,&quot;eye_color&quot;:&quot;yellow&quot;,&quot;birth_year&quot;:&quot;41.9BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/13/&quot;],&quot;created&quot;:&quot;2014-12-10T15:18:20.704000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.313000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/4/&quot;},{&quot;name&quot;:&quot;Leia Organa&quot;,&quot;height&quot;:&quot;150&quot;,&quot;mass&quot;:&quot;49&quot;,&quot;hair_color&quot;:&quot;brown&quot;,&quot;skin_color&quot;:&quot;light&quot;,&quot;eye_color&quot;:&quot;brown&quot;,&quot;birth_year&quot;:&quot;19BBY&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/2/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[&quot;https://swapi.dev/api/vehicles/30/&quot;],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:20:09.791000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.315000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/5/&quot;},{&quot;name&quot;:&quot;Owen Lars&quot;,&quot;height&quot;:&quot;178&quot;,&quot;mass&quot;:&quot;120&quot;,&quot;hair_color&quot;:&quot;brown, grey&quot;,&quot;skin_color&quot;:&quot;light&quot;,&quot;eye_color&quot;:&quot;blue&quot;,&quot;birth_year&quot;:&quot;52BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:52:14.024000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.317000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/6/&quot;},{&quot;name&quot;:&quot;Beru Whitesun lars&quot;,&quot;height&quot;:&quot;165&quot;,&quot;mass&quot;:&quot;75&quot;,&quot;hair_color&quot;:&quot;brown&quot;,&quot;skin_color&quot;:&quot;light&quot;,&quot;eye_color&quot;:&quot;blue&quot;,&quot;birth_year&quot;:&quot;47BBY&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:53:41.121000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.319000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/7/&quot;},{&quot;name&quot;:&quot;R5-D4&quot;,&quot;height&quot;:&quot;97&quot;,&quot;mass&quot;:&quot;32&quot;,&quot;hair_color&quot;:&quot;n/a&quot;,&quot;skin_color&quot;:&quot;white, red&quot;,&quot;eye_color&quot;:&quot;red&quot;,&quot;birth_year&quot;:&quot;unknown&quot;,&quot;gender&quot;:&quot;n/a&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;],&quot;species&quot;:[&quot;https://swapi.dev/api/species/2/&quot;],&quot;vehicles&quot;:[],&quot;starships&quot;:[],&quot;created&quot;:&quot;2014-12-10T15:57:50.959000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.321000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/8/&quot;},{&quot;name&quot;:&quot;Biggs Darklighter&quot;,&quot;height&quot;:&quot;183&quot;,&quot;mass&quot;:&quot;84&quot;,&quot;hair_color&quot;:&quot;black&quot;,&quot;skin_color&quot;:&quot;light&quot;,&quot;eye_color&quot;:&quot;brown&quot;,&quot;birth_year&quot;:&quot;24BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/1/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/12/&quot;],&quot;created&quot;:&quot;2014-12-10T15:59:50.509000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.323000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/9/&quot;},{&quot;name&quot;:&quot;Obi-Wan Kenobi&quot;,&quot;height&quot;:&quot;182&quot;,&quot;mass&quot;:&quot;77&quot;,&quot;hair_color&quot;:&quot;auburn, white&quot;,&quot;skin_color&quot;:&quot;fair&quot;,&quot;eye_color&quot;:&quot;blue-gray&quot;,&quot;birth_year&quot;:&quot;57BBY&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;homeworld&quot;:&quot;https://swapi.dev/api/planets/20/&quot;,&quot;films&quot;:[&quot;https://swapi.dev/api/films/1/&quot;,&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/4/&quot;,&quot;https://swapi.dev/api/films/5/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;species&quot;:[],&quot;vehicles&quot;:[&quot;https://swapi.dev/api/vehicles/38/&quot;],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/48/&quot;,&quot;https://swapi.dev/api/starships/59/&quot;,&quot;https://swapi.dev/api/starships/64/&quot;,&quot;https://swapi.dev/api/starships/65/&quot;,&quot;https://swapi.dev/api/starships/74/&quot;],&quot;created&quot;:&quot;2014-12-10T16:16:29.192000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T21:17:50.325000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/people/10/&quot;}]}
+
+23:35:05.152 |-INFO   c.o.f.t.c.h.GenericHttpClient| &lt;==&lt;&lt; END HTTP (-1-byte body)
+
+    When a user gets all the people details list                                        # SwapiRequestSteps.aUserGetsAllThePeopleDetailsList()
+    Then user verifies the given person details                                         # SwapiRequestSteps.userVerifiesTheGivenPersonDetails(DataTable)
+23:35:05.159 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:05.159 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario teardown - Begin
+23:35:05.159 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+23:35:05.159 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+23:35:05.159 |-INFO         c.o.f.t.s.c.CommonSteps| Scenario teardown - End
+23:35:05.159 |-INFO         c.o.f.t.s.c.CommonSteps| =========================
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.9.2</a> at 20 Mar 2023, 23:35:05</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,378 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 47384333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Get given people details and verify the response",
+        "description": "",
+        "id": "find-the-people-details-from-swapi;get-given-people-details-and-verify-the-response;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 282917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 422902875,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user gets single person details from swapi with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 53
+                }
+              ],
+              "location": "SwapiRequestSteps.aUserGetsSinglePersonDetailsFromSwapi(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1681958,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user verifies the people details",
+            "match": {
+              "location": "SwapiRequestSteps.userVerifiesThePeopleDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "NAME",
+                  "HEIGHT",
+                  "MASS",
+                  "HAIR_COLOR",
+                  "SKIN_COLOR",
+                  "EYE_COLOR",
+                  "BIRTH_YEAR",
+                  "GENDER"
+                ]
+              },
+              {
+                "cells": [
+                  "Luke Skywalker",
+                  "172",
+                  "77",
+                  "blond",
+                  "fair",
+                  "blue",
+                  "19BBY",
+                  "male"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@swapi"
+          },
+          {
+            "name": "@people"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 468083,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Get given people details and verify the response",
+        "description": "",
+        "id": "find-the-people-details-from-swapi;get-given-people-details-and-verify-the-response;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 303583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 94430791,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user gets single person details from swapi with id 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 53
+                }
+              ],
+              "location": "SwapiRequestSteps.aUserGetsSinglePersonDetailsFromSwapi(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84208,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user verifies the people details",
+            "match": {
+              "location": "SwapiRequestSteps.userVerifiesThePeopleDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "NAME",
+                  "HEIGHT",
+                  "MASS",
+                  "HAIR_COLOR",
+                  "SKIN_COLOR",
+                  "EYE_COLOR",
+                  "BIRTH_YEAR",
+                  "GENDER"
+                ]
+              },
+              {
+                "cells": [
+                  "Darth Vader",
+                  "202",
+                  "136",
+                  "none",
+                  "white",
+                  "yellow",
+                  "41.9BBY",
+                  "male"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@swapi"
+          },
+          {
+            "name": "@people"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 615000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Get all people details and verify given people data in the response",
+        "description": "",
+        "id": "find-the-people-details-from-swapi;get-all-people-details-and-verify-given-people-data-in-the-response;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 334750,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 166340917,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "a user gets all the people details list",
+            "match": {
+              "location": "SwapiRequestSteps.aUserGetsAllThePeopleDetailsList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1453875,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verifies the given person details",
+            "match": {
+              "location": "SwapiRequestSteps.userVerifiesTheGivenPersonDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "NAME",
+                  "EYE_COLOR"
+                ]
+              },
+              {
+                "cells": [
+                  "Luke Skywalker",
+                  "blue"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@swapi"
+          },
+          {
+            "name": "@people"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 352459,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Get all people details and verify given people data in the response",
+        "description": "",
+        "id": "find-the-people-details-from-swapi;get-all-people-details-and-verify-given-people-data-in-the-response;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 190084,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 126866250,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "a user gets all the people details list",
+            "match": {
+              "location": "SwapiRequestSteps.aUserGetsAllThePeopleDetailsList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89917,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verifies the given person details",
+            "match": {
+              "location": "SwapiRequestSteps.userVerifiesTheGivenPersonDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "NAME",
+                  "EYE_COLOR"
+                ]
+              },
+              {
+                "cells": [
+                  "Darth Vader",
+                  "yellow"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@swapi"
+          },
+          {
+            "name": "@people"
+          }
+        ]
+      }
+    ],
+    "name": "Find the people details from swapi",
+    "description": "  As an API user\n  I want to get people details from swapi\n  So that I use their starships and vehicle details",
+    "id": "find-the-people-details-from-swapi",
+    "keyword": "Feature",
+    "uri": "src/test/resources/feature_files/openapi/api/swapi/SwapiPeople.feature",
+    "tags": [
+      {
+        "name": "@swapi",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@people",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

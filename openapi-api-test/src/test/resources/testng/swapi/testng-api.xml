@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="OpenAPI - Automation Suite - API" parallel="classes" thread-count="15" verbose="1">
+  <test annotations="JDK" name="TestNG - API - Part1" preserve-order="true">
+    <packages>
+      <package name="com.openapi.fcds.test.runners.api.*"/>
+    </packages>
+  </test>
+</suite>
